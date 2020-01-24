@@ -65,5 +65,10 @@ public class CertOfDeposit {
     public void setMaturityDate(LocalDate maturityDate) {
         this.maturityDate = maturityDate;
     }
+    
+    public String toString()
+    {
+        return "Number : " + this.certificateNumber + " lastName : " + this.lastName + " Balance : " + this.balance + " IssueDate : " + this.issueDate;
+    }
    
 }
