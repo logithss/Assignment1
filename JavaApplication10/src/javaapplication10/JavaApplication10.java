@@ -5,81 +5,26 @@
  */
 package javaapplication10;
 
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.Scanner;
 public class JavaApplication10 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        //System.out.println(Billing.computeBill(10, 2, 3));
-        
-        
-        MyInteger i = new MyInteger(4);
-        char[] c = {'1', '2', '3', '1'};
-        System.out.println(MyInteger.parseInt(c));
-        System.out.println(MyInteger.parseInt("1212145"));
-        
-        /*
-        Scanner scan = new Scanner(System.in);
-        
-        CertOfDeposit c1;
-        CertOfDeposit c2;
-        
-        int certificateNum;
-        String lastName;
-        float balance;
-        
-        int year;
-        int month;
-        int day;
-        System.out.println("Creating CertOfDeposit 1...");
-        
-        System.out.print("Input certificateNum : ");
-        certificateNum = scan.nextInt();
-        System.out.print("Input lastName : ");
-        lastName = scan.next();
-        System.out.print("Input balance : ");
-        balance = scan.nextFloat();
-        System.out.print("Input year : ");
-        year = scan.nextInt();
-        System.out.print("Input month : ");
-        month = scan.nextInt();
-        System.out.print("Input day : ");
-        day = scan.nextInt();
-        
-        c1 = new CertOfDeposit(certificateNum, lastName, balance, LocalDate.of(year, month, day));
-        System.out.println("CertOfDeposit 1 created successfully!");
-        
-        
-        
-        System.out.println("Creating CertOfDeposit 2...");
-        
-        System.out.print("Input certificateNum : ");
-        certificateNum = scan.nextInt();
-        System.out.print("Input lastName : ");
-        lastName = scan.next();
-        System.out.print("Input balance : ");
-        balance = scan.nextFloat();
-        System.out.print("Input year : ");
-        year = scan.nextInt();
-        System.out.print("Input month : ");
-        month = scan.nextInt();
-        System.out.print("Input day : ");
-        day = scan.nextInt();
-        
-        c2 = new CertOfDeposit(certificateNum, lastName, balance, LocalDate.of(year, month, day));
-        System.out.println("CertOfDeposit 2 created successfully!");
-        
-        
-        System.out.println(c1);
-        System.out.println(c2);
-        
-        */
-
-
-    }
+  public static void main(String[] args) {
+    MyInteger n1 = new MyInteger(97);
+    System.out.println("n1 is prime? " + n1.isPrime());
     
+    String s = "3532";
+    System.out.println(MyInteger.parseInt(s));
+    char[] c = {'1', '7', '4', '9'};
+    System.out.println(MyInteger.parseInt(c));
+    /*System.out.println("n1 is even? " + n1.isEven());
+    System.out.println("n1 is prime? " + n1.isPrime());
+    System.out.println("15 is prime? " + MyInteger.isPrime(15));
+    char[] chars = {'3', '5', '3', '9'};
+    System.out.println(MyInteger.parseInt(chars));
+    String s = "3532";
+    System.out.println(MyInteger.parseInt(s));
+     MyInteger n2 = new MyInteger(24);
+    System.out.println("n2 is odd? " + n2.isOdd());
+    System.out.println("45 is odd? " + MyInteger.isOdd(45));
+    System.out.println("n1 is equal to n2? " + n1.equals(n2));
+    System.out.println("n1 is equal to 5? " + n1.equals(5));*/
+  }
 }
