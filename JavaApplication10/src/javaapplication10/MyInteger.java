@@ -30,7 +30,7 @@ public class MyInteger {
     
     public boolean isOdd()
     {
-        return (this.value%2) != 0;
+        return !isEven();
     }
     
     public boolean isPrime()
@@ -58,7 +58,7 @@ public class MyInteger {
     
     public static boolean isOdd(int value)
     {
-        return (value%2) != 0;
+        return isEven(value);
     }
     
     public static boolean isPrime(int value)
